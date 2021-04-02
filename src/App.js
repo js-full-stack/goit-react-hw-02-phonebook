@@ -1,10 +1,13 @@
+import { v4 as uuidv4 } from 'uuid';
+import ContactForm from './Components/ContactForm';
+import { useState } from 'react';
+
 function App() {
+  const [contacts, setContacts] = useState([]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Phonebook</h1>
-        <p>Lorem ipsimsag a;jglsag hdksjhklds gkdsnkhndsk lhnsdkh</p>
-      </header>
+      <ContactForm />
     </div>
   );
 }
